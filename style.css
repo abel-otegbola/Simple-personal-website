@@ -7,3 +7,64 @@
     padding: 0;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    padding: 5%;
+    gap: 30px;
+}
+
+.profile {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile .profile__pic {
+    border-radius: 50%;
+    outline: 1px solid rgb(204, 38, 85);
+    outline-offset: 2px;
+}
+.profile .date {
+    text-align: center;
+}
+
+section {
+    width: 55%;
+    padding-inline: 20px;
+}
+
+.objectives__texts {
+    padding: 20px;
+    margin-block: 20px;
+    line-height: 170%;
+    background-color: #f6f3f3;
+    border-radius: 5px;
+}
+
+.links {
+    margin-block: 20px;
+}
+
+.links .link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-block: 10px;
+    text-align: center;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .profile, section {
+        width: 100%;
+    }
+}
